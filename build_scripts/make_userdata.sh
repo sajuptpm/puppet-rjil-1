@@ -1,5 +1,10 @@
 #!/bin/bash -xe
 
+##SM: 
+#This userdata will push to each VM/Node via nova API.
+#See deploy.sh, it uses "jiocloud.apply_resources apply" to create VM/Node and push userdata.
+#You can see "apply_resources.py" script in github project "python-jiocloud"
+
 cat <<EOF >userdata.txt
 #!/bin/bash
 date
